@@ -52,7 +52,7 @@ export class ProductsService {
     const bucket = this.configService.get<string>('AWS_S3_BUCKET_NAME') as string;
     const region = this.configService.get<string>('AWS_REGION') as string;
     
-    const fileName = `produtos/${id}-${Date.now()}-${file.originalname}`;
+    const fileName = `products/${id}-${Date.now()}-${file.originalname}`;
 
     const command = new PutObjectCommand({
       Bucket: bucket,
