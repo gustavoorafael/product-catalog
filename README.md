@@ -18,6 +18,9 @@ The application was designed to be scalable and secure, running in a real produc
 - **Security (SSL/TLS):** Security certificate generated via Let's Encrypt (Certbot), ensuring encrypted traffic (HTTPS) and preventing *Mixed Content* blocks with the frontend.
 - **Dynamic DNS:** Custom domain routed via No-IP.
 - **File Storage:** Direct integration with AWS S3 via AWS SDK. Equipment images are sent via *multipart/form-data*, stored in an S3 Bucket, and the public URL is saved in the database.
+- **Automated Maintenance:** Scheduled Cron Job (every 30 mins) to wipe user-uploaded data and reset the database with seed data.
+- **S3 Protection:** Intelligent cleanup script that removes temporary uploads while preserving core assets.
+- **API Rate Limiting:** Throttler integration to prevent DDoS and brute-force attacks (10 req/min).
 
 ## Technologies Used
 
