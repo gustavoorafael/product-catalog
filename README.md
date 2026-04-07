@@ -57,7 +57,7 @@ AWS_S3_BUCKET_NAME=your_bucket_name
 
 1. Clone this repository:
 ```bash
-git clone [https://github.com/YOUR-USERNAME/product-catalog-api.git](https://github.com/YOUR-USERNAME/product-catalog-api.git)
+git clone https://github.com/gustavoorafael/product-catalog.git
 ```
 2. Install dependencies:
 ```bash
@@ -79,3 +79,5 @@ npm run start:dev
 
 ---
 *Developed as part of a Full Stack architecture*
+
+*Front-end Project: https://github.com/gustavoorafael/product-catalog-web*
